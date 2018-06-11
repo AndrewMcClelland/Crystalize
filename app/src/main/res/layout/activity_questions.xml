@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#882D61"
+    android:orientation="vertical"
+    tools:context=".questions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#440027"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/question"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9775AA"
+        android:inputType="text"
+        android:textSize="20dip"
+        android:layout_margin="10dp"
+        android:hint="Answer"
+        android:id="@+id/answer"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Okay"
+            android:layout_margin="2dp"
+            android:padding="2dp"
+            android:onClick="onAnswerClick"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_margin="2dp"
+            android:text="Hint"
+            android:onClick="onHintClick"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/tickcross"
+        android:src="@drawable/weirdtick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="#440027"
+        android:text="CORRECT!"
+        android:textSize="30dp"
+        android:id="@+id/correctornot"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_margin="50dp"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:id="@+id/nextbutton"
+        android:onClick="onNextClick"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+</LinearLayout>
